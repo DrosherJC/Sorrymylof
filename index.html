@@ -19,6 +19,71 @@
             document.getElementById("si").style.display="block";
         }
     </script>
+    <style>
+    /* Estilos generales para pantallas grandes */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fcfcfc;
+}
+
+.contenedor {
+    margin: auto;
+    max-width: 900px;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo {
+    margin-bottom: 20px;
+}
+
+.opciones p {
+    background: black;
+    display: initial;
+    padding: 12px;
+    color: #ffffff;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+p.p1 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+}
+
+/* Estilos generales para pantallas grandes */
+/* ... (otros estilos) ... */
+
+#si {
+    background: #515050;
+    max-width: 90%; /* Ancho máximo relativo al ancho de la ventana */
+    margin: 0 auto; /* Centra horizontalmente el elemento */
+    padding: 20px;
+    display: none;
+    overflow: auto; /* Habilita la barra de desplazamiento en caso de contenido largo */
+    white-space: normal; /* Permite que el texto se ajuste al ancho */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    word-wrap: break-word; /* Rompe palabras largas si es necesario */
+}
+
+/* Estilos específicos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    /* ... (otros estilos para pantallas pequeñas) ... */
+
+    #si {
+        max-width: 100%; /* Ajusta el ancho máximo para ocupar todo el ancho de pantalla */
+    }
+}
+
+
+
+</style>
 </head>
 <body>
     <div class="contenedor">
